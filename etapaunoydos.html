@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="etapaunoydos.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="etapauno/script_1.js"></script>
+    <script src="etapauno/script_2.js"></script>
+    <script src="etapauno/script_3.js"></script>
+    <script src="etapauno/script_4.js"></script>
+    <script src="etapauno/script_5.js"></script>
+    <script src="etapauno/script_6.js"></script>
+    <script src="etapauno/script_7.js"></script>
+    <script src="etapauno/script_8.js"></script>
+    <script src="etapauno/script_9.js"></script>
+    <script src="etapauno/script_10.js"></script>
+    <script src="etapauno/script_11.js"></script>
+    <script src="etapauno/script_12.js"></script>
+    <script src="etapauno/script_13.js"></script>
+    <script src="etapauno/script_14.js"></script>
+    <script type="module" src="etapados/script_1.js"></script>
+    <script src="etapados/script_5.js"></script>
+    <script src="etapados/script_6.js"></script>
+    <script src="etapados/script_9.js"></script>
+    <script src="etapados/script_10.js"></script>
+    <script src="etapados/script_11.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+    <title>TP Visualizacion</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="etapaunoydos.html">Exploración</a>
+        <a href="etapafinal.html">Entrega Final</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776; Visualización de Datos</button>
+      <div class=" nombres">Lawson y Valeggia</div>
+    </div>
+    <div class="seccion">
+      <div class="titulo">Primer etapa: Marcas y canales</div>
+      <div class="descripcion">En la primer etapa fuimos probando diferentes graficos, volcando nuestras ideas de la manera que creimos mas conveniente. Algunos terminaron siendo incoherentes y por eso los descartamos en etapas siguientes. </div>
+
+      <div class="subtitulo">Grafico 1</div>
+      <div class="descripcion">Misiones cada año y el país que las llevo a cabo.</div>
+      <div class="grafico">
+        <div id="chart_1"></div>
+      </div>
+    
+      <div class="subtitulo">Grafico 2</div>
+      <div class="descripcion">Magnitud de horas en misión clasificandolos por mujeres y hombres que hubo en las misiones cada año y su nacionalidad.</div>
+      <div class="grafico">
+        <div id="chart_2"></div>
+      </div>
+
+      
+      <div class="subtitulo">Grafico 3</div>
+      <div class="descripcion">Misiones por año y países las hicieron. </div>
+      <div class="grafico">
+        <div id="chart_3"></div>
+      </div>
+    
+    
+    
+      <div class="subtitulo">Grafico 4</div>
+      <div class="descripcion">Edades de los astronautas por misión y si eran mujeres u hombres.</div>
+      <div class="grafico">
+        <div id="chart_4"></div>
+      </div>
+
+    
+      <div class="subtitulo">Grafico 5</div>
+      <div class="descripcion">Rango de edades de los astronautas y su nacionalidad.</div>
+      <div class="grafico">
+        <div id="chart_5"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 6</div>
+      <div class="descripcion">Diferencia en cantidades entre hombres y mujeres y su edad en la misión.</div>
+      <div class="grafico">
+        <div id="chart_6"></div>
+      </div>
+    
+      <div class="subtitulo">Grafico 7</div>
+      <div class="descripcion">Cantidad de veces que un país cumplió una misión con la cantidad de horas "y" horas.</div>
+      <div class="grafico">
+        <div id="chart_7"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 8</div>
+      <div class="descripcion">Astronautas nacieron en "x" año y a que país pertenecen.</div>
+      <div class="grafico">
+        <div id="chart_8"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 9</div>
+      <div class="descripcion">Cantidad de trabajadores clasificados por su ocupación cada año que se hizo una misión.</div>
+      <div class="grafico">
+        <div id="chart_9"></div>
+      </div>
+      <div class="subtitulo">Grafico 10</div>
+      <div class="descripcion">Promedio de edad "y" en los diferentes años que se hizo una misión.</div>
+      <div class="grafico">
+        <div id="chart_10"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 11</div>
+      <div class="descripcion">Rango de la frecuencia con la cual se hicieron misiones con "y" cantidad de horas.</div>
+      <div class="grafico">
+        <div id="chart_11"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 12</div>
+      <div class="grafico">
+        <div id="chart_12"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 13</div>
+      <div class="grafico">
+        <div id="chart_13"></div>
+      </div>
+
+      <div class="subtitulo">Grafico 14</div>
+      <div class="grafico">
+        <div id="chart_14"></div>
+      </div>
+
+  </div>
+  <div class="seccion">
+    <div class="titulo">Segunda etapa: Diseño y edición</div>
+    <div class="descripcion">En la segunda etepa, probamos distintos tipos de diseño en papel y luego en las siguientes etapas los volcamos en los gráficos.</div>
+
+    <div class="subtitulo">Misiones al más allá</div>
+    <div class="descripcion">Evolucion de cantidad de personas de cada país en cada año que hubo una misión .</div>
+    <div class="grafico">
+      <div id="chart"></div>
+      <div id="selector">
+        <p>Seleccione año:</p>
+        <input type="range" min="2010" max="2019" step="1" value="2010" id="input" />
+        <p id="value-input"></p>
+      </div>
+    </div>
+  
+    <div class="subtitulo">Edades en el radar</div>
+    <div class="descripcion">Rango de edades de los astronautas y su nacionalidad.</div>
+    <div class="grafico">
+      <div id="chart_25"></div>
+    </div>
+
+    <div class="subtitulo">La brecha de género astronáutica</div>
+    <div class="descripcion">Frecuencia de edades de las personas al momento de la mision, separado entre hombres y mujeres.</div>
+    <div class="grafico">
+      <div id="chart_26"></div>
+    </div>
+  
+    <div class="subtitulo">Posiciones interestelares</div>
+    <div class="descripcion">Cantidad de trabajadores clasificados por su ocupación cada año que se hizo una misión.</div>
+    <div class="grafico">
+      <div id="chart_29"></div>
+    </div>
+    <div class="subtitulo">Flotando en el exterior</div>
+    <div class="descripcion">Promedio de actividades extravehiculares (en horas) por año de misión.</div>
+    <div class="grafico">
+      <div id="chart_210"></div>
+    </div>
+
+    <div class="subtitulo">Especialidades a la obra</div>
+    <div class="descripcion">Suma de horas totales de todas las mision de las distintas ocupaciones de sus integrantes.</div>
+    <div class="grafico">
+      <div id="chart_211"></div>
+    </div>
+
+</div>
+  <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+  /* Set the width of the sidebar to 250px (show it) */
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+
+  /* Set the width of the sidebar to 0 (hide it) */
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+	</script>
+  </body>
+</html>
