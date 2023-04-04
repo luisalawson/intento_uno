@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="sheetstyle" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script type="module" src="final/script_1.js"></script>
+    <script src="etapafinal/script_5.js"></script>
+    <script src="etapafinal/script_6.js"></script>
+    <script src="etapafinal/script_10.js"></script>
+    <script src="etapafinal/script_11.js"></script>
+    <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+    <title>TP Visualizacion</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .seccion {
+        margin-top: 40px;
+        text-align: center;
+      }
+      
+      .titulo {
+        color: #637373;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      
+      .descripcion {
+        margin-top: 12px;
+      }
+
+      .subtitulo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+      .consignas {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      
+      .grafico {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* opcional: alinea verticalmente al centro */
+      margin: 0 auto;
+      width: 80%;
+      border: 1px solid #637373;
+      padding: 10px;
+
+      }
+      .navbar {
+  overflow: hidden;
+  background-color: #679B9B;
+  top: 0; 
+  width: 100%; 
+}
+
+.nombres{
+  color: #fef7f1;
+  font-size: 16px;
+  float: right;
+  padding-top: 18px;
+  padding-right: 12px;
+}
+.sidepanel {
+  height: 250px;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  background-color: #679B9B;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fef7f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  background-color: rgb(45, 128, 128);
+}
+
+
+.sidepanel .closebtn {
+  background-color:#679B9B;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #679B9B;
+  color: #fef7f1;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:  rgb(45, 128, 128);
+}
+
+
+.main {
+  margin-top: 30px; 
+}
+      
+    </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Inicio</a>
+      <a href="etapaunoydos.html">Exploración</a>
+      <a href="etapafinal.html">Entrega Final</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776; Visualización de Datos</button>
+    <div class=" nombres">Lawson y Valeggia</div>
+  </div>
+  <div class="seccion">
+    <div class="titulo">Trabajo Práctico 2: Visualización de Datos</div>
+    <div class="descripcion"> Consignas del trabajo
+    </div>
+    </div>
+    <div class="subtitulo">Etapa Uno: Marcas y Canales</div>
+    <div class="consignas">A.Reconocer las tipologías del conjunto de datos, de los datos y de sus atributos.</div>
+    <div class="consignas">B. Exploración visual en Plot. Elegir un atributo del conjunto de datos y representarlo visualmente eligiendo una marca y un canal de codificación. ¿En el mismo gráfico, se puede visualizar otro atributo con la misma marca y otro canal? ¿Se puede visualizar otro atributo agregando una nueva marca?</div>
+    <div class="consignas">C. ¿Es eficaz la visualización? Probar de visualizar el mismo atributo con otra marca. </div>
+    <div class="consignas">D. Crear un nuevo proyecto y repetir los puntos B y C cambiando de atributo.</div>
+    
+    <div class="subtitulo">Etapa Dos: Diseño y edición</div>
+    <div class="consignas">Del total de visualizaciones creadas seleccionar las cuatro más efectivas. Ajustar el diseño de cada uno de los gráficos: definir el formato, mejorar los elementos textuales (ticks, leyendas, etc.). Destacar datos importantes del gráfico con color y texto. Agregar leyendas que expliquen la codificación del color si es necesario.</div>
+    
+    <div class="subtitulo">Etapa Tres: Diseño Web</div>
+    <div class="consignas">Aplicación de nuevos elementos en HTML. Cambio de apariencia y aplicación de estilos en CSS. Para cada visualización definir el tema, redactar y maquetar un título que cumpla la función de identificar el mensaje. Ampliar con una bajada de segunda jerarquía que se complemente con el enunciado del título principal. En un tercer nivel, complementar el gráfico con la  información de la fuente de datos y de los autores. Diseño tipográfico y cromático de los elementos.</div>
+    
+    <div class="subtitulo">Etapa Cuatro: Ultima Corrección</div>
+    <div class="consignas">Ajustes avanzados de diseño. Espacio, composición, jerarquía, simplicidad. Evaluar la relación data-ink. Verificación del discurso/mensaje respecto a la propuesta. Recepción del testeo. Discusión y aplicación crítica de los resultados de la prueba según la guía de análisis.</div>
+
+	<script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+  /* Set the width of the sidebar to 250px (show it) */
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+
+  /* Set the width of the sidebar to 0 (hide it) */
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+	</script>
+</body>
+</html>
