@@ -9,5 +9,6 @@ El trabajo consiste de una pagina web con 3 interfaces:
 
 Luego, las carpetas contienen:
 1. Etapauno: los scripts a todos los .js usados en la etapa de exploración
-2. Etapados: los scripts a todos los .js usados en la etapa final
+2. Etapados: los scripts a todos los .js usados en la etapa de exploración con sus debidas modificaciones
+3. Etapafinal: los scripts a todos los .js usados en la etapa final
 
