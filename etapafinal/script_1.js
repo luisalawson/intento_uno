@@ -40,6 +40,9 @@ function createChart(yearSelected) {
     x:{
       label: "Nacionalidad",
     },
+    y:{
+      domain: [0,20]
+    },
     color: {
       legend: true,
       className: 'legend-clusters',

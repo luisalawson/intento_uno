@@ -17,8 +17,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     ],
     x: {
       label: '← Min edad . Max edad →',
-      domain: [30,63],
-      ticks: [30, 35, 40, 45, 50, 55, 60],
+      domain: [33,61],
+      ticks: [33, 35, 40, 45, 50, 55, 60],
     },
     y:{
       label: "Nacionalidad",
